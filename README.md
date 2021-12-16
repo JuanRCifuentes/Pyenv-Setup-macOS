@@ -5,6 +5,8 @@ This repositoty hosts shell scripts to help setup pyenv. This works for pyenv ve
 
 It takes into account all the steps and recommendations listed in the [official pyenv repository in Github](https://github.com/pyenv/pyenv).
 
+> **Execute the scripts:** To execute the scripts, locate the folder in terminal and then write `./<file.sh>`.
+
 ## Virtualenv plug-in
 
 It also helps with the setup of virtualenv, which is published by the same Github user and as a plug-in for pyenv. [Official virtualenv repository](https://github.com/pyenv/pyenv-virtualenv).
