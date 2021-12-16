@@ -7,6 +7,11 @@ It takes into account all the steps and recommendations listed in the [official 
 
 > **Execute the scripts:** To execute the scripts, locate the folder in terminal and then write `./<file.sh>`.
 
+Files:
+1. `install_pyenv.sh`: Execute this file to install pyenv and virtual-env.
+2. `backup_python.sh`: Execute this file to create a backup of all your pyenv environments and packages.
+3. `install_python_versions.sh`: Execute this file to install every python version with it's environments and packages in the backup created above.
+
 ## Virtualenv plug-in
 
 It also helps with the setup of virtualenv, which is published by the same Github user and as a plug-in for pyenv. [Official virtualenv repository](https://github.com/pyenv/pyenv-virtualenv).
@@ -14,7 +19,7 @@ It also helps with the setup of virtualenv, which is published by the same Githu
 ## Virtual Environments backup
 To create a backup for all virtual environments, there is a script called `backup_python.sh`. This scans every python version installed and every virtual environment within them. It later creates text files with every dependency (using the `pip freeze` command) installed in those environments in a folder called `Versions`.
 
-## Virtual Environments Restore
+## Virtual Environments Restore (Install Python Versions)
 To restore any previously backedup virtual environment, there is a script called `install_python_versions.sh`. It reads the files created by the backup file and:
 1. Installs every python verison listed
 2. Creates all the virtual environments listed
